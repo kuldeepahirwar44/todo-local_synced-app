@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(black, gray, black);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+s {
+  color: black;
+  text-decoration-thickness: 2px;
+}
+
+input[type="text"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 2.5px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 2.5px;
+  cursor: pointer;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+button.addBtn {
+  background-color: rgb(3, 180, 83);
+}
+
+button.removeBtn {
+  background-color: tomato;
+}
+
+button.removeAllBtn {
+  background-color: red;
+}
+
+button.button-with-hover:hover {
+  transform: scale(1.1);
+}
+
+button.button-with-hover:active {
+  transform: scale(0.9);
+}
+
+button:disabled {
+  background-color: rgb(177, 174, 174);
+  cursor: no-drop;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+label.check-removeAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container {
+  background-color: lightgray;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0px #2f2e2e;
+}
+
+.listContainer {
+  max-height: 55vh;
+  overflow: auto;
+  min-width: 300px;
+}
+
+.add-controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item:nth-child(1) {
+  margin-top: 10px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 4px;
+  padding: 5px;
+  border-radius: 2.5px;
+  background-color: gray;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.listData span {
+  color: white;
+}
+
+.listData {
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 100%;
+}
+
+.removeAll-controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px 10px 5px;
+}
+
+.individual-checked-remove-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.individual-checked-remove-container label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  background-color: rgb(36, 231, 150);
+  padding: 4px;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+.individual-checked-remove-container label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .listContainer {
+    min-width: 500px;
+    max-width: 600px;
+  }
+}
